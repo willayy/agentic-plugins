@@ -20,3 +20,4 @@ Instructions for creating conventional commits, scoping changes to individual so
 - **Constrain description verbs:** Begin the description with one of the allowed imperative verbs: `add`, `allow`, `enforce`, `extract`, `move`, `prevent`, `remove`, `rename`, `swap`, or `update`.
 - **Synchronize remote branches:** Push commits to the remote branch only after all intended software object changes have been cleanly committed.
 - **Preserve repository integrity:** Do not create or write unreviewed artifacts or untracked state modifications during version control operations.
+- **Require explicit approval for git actions:** Never execute git actions (such as staging, committing, branching, checking out, merging, rebasing, or pushing) without explicit approval from the user.
