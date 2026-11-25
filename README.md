@@ -1,38 +1,39 @@
-# Gemini Global Instructions & Plugins
+# Agentic Plugins & Skills
 
-A central repository storing global customization instructions, rules, and plugins for Google Antigravity and Gemini agents.
+A central repository storing agent plugins, rules, and skills for Google Antigravity and Gemini agents.
 
 ## Repository Structure
 
 ```txt
-williams-agentic-AI-plugins-and-skills/
+agentic-plugins/
 ├── .github/
 │   └── workflows/
 │       └── release-skills.yml
-├── config/
-│   ├── global-rules-file/
-│   │   └── AGENTS.md
-│   └── plugins/
-│       ├── williams-agentic-software-development-skills/
-│       │   ├── plugin.json
-│       │   ├── README.md
-│       │   ├── rules/
-│       │   │   └── AGENTS.md
-│       │   └── skills/
-│       │       ├── git/
-│       │       ├── python-programming/
-│       │       ├── react-programming/
-│       │       └── relational-databases/
-│       └── williams-general-agentic-skills/
-│           ├── plugin.json
-│           ├── README.md
-│           ├── rules/
-│           │   └── AGENTS.md
-│           └── skills/
-│               ├── issue-diagnosis/
-│               ├── question-answering/
-│               ├── skill-rule-creation/
-│               ├── text-review/
-│               └── using-sources/
+├── plugins/
+│   ├── agentic-software-development-skills/
+│   │   ├── plugin.json
+│   │   ├── README.md
+│   │   ├── rules/
+│   │   │   └── AGENTS.md
+│   │   └── skills/
+│   │       ├── git/
+│   │       ├── python-programming/
+│   │       ├── react-programming/
+│   │       └── relational-databases/
+│   └── general-agentic-skills/
+│       ├── plugin.json
+│       ├── README.md
+│       ├── rules/
+│       │   └── AGENTS.md
+│       └── skills/
+│           ├── issue-diagnosis/
+│           ├── question-answering/
+│           ├── skill-rule-creation/
+│           ├── text-review/
+│           └── using-sources/
+├── skills/
+│   └── system/
+│       └── run-workflow/
+│           └── SKILL.md
 └── README.md
 ```

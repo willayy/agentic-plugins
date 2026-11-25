@@ -30,7 +30,7 @@ jobs:
           import sys
           from pathlib import Path
 
-          plugin_files = list(Path("config/plugins").glob("*/plugin.json"))
+          plugin_files = list(Path("plugins").glob("*/plugin.json"))
           if not plugin_files:
               sys.exit("::error::No plugin.json files found.")
 
@@ -103,7 +103,7 @@ jobs:
       - name: Package skills
         run: |
           mkdir -p dist
-          for skill_dir in config/plugins/*/skills/*/; do
+          for skill_dir in plugins/*/skills/*/; do
             if [ -f "${skill_dir}SKILL.md" ]; then
               skill_name=$(basename "$skill_dir")
               echo "Packaging skill $skill_name..."
@@ -114,7 +114,7 @@ jobs:
 
       - name: Package plugins
         run: |
-          for plugin_dir in config/plugins/*/; do
+          for plugin_dir in plugins/*/; do
             if [ -f "${plugin_dir}plugin.json" ]; then
               plugin_name=$(basename "$plugin_dir")
               echo "Packaging plugin $plugin_name..."
